@@ -1,4 +1,4 @@
-package com.pranav.gympulse.user.models.entity;
+package com.pranav.gympulse.user.model.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

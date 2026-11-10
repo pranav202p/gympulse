@@ -63,6 +63,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Source: https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- JJWT Jackson Serializer -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>

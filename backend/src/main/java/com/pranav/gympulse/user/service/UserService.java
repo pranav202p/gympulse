@@ -1,9 +1,9 @@
 package com.pranav.gympulse.user.service;
 
 import com.pranav.gympulse.auth.exception.UserNotFoundException;
-import com.pranav.gympulse.user.models.dto.UserRequestDto;
-import com.pranav.gympulse.user.models.dto.UserResponseDto;
-import com.pranav.gympulse.user.models.entity.User;
+import com.pranav.gympulse.user.model.dto.UserRequestDto;
+import com.pranav.gympulse.user.model.dto.UserResponseDto;
+import com.pranav.gympulse.user.model.entity.User;
 import com.pranav.gympulse.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
