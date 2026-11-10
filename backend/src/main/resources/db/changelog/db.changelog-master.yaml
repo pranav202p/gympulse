@@ -1,4 +1,6 @@
-
 databaseChangeLog:
   - include:
       file: db/changelog/changes/001-create-user-table.yaml
+
+  - include:
+      file: db/changelog/changes/002-create-gyms-table.yaml

@@ -1,6 +1,6 @@
 package com.pranav.gympulse.auth.security;
 
-import com.pranav.gympulse.user.models.entity.User;
+import com.pranav.gympulse.user.model.entity.User;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

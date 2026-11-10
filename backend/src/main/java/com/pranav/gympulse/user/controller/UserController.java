@@ -1,11 +1,10 @@
 package com.pranav.gympulse.user.controller;
 
 import com.pranav.gympulse.common.dto.ApiResponse;
-import com.pranav.gympulse.user.models.dto.UserRequestDto;
-import com.pranav.gympulse.user.models.dto.UserResponseDto;
+import com.pranav.gympulse.user.model.dto.UserRequestDto;
+import com.pranav.gympulse.user.model.dto.UserResponseDto;
 import com.pranav.gympulse.user.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
