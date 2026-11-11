@@ -52,4 +52,28 @@ public class GymController {
         return  gym;
 
     }
+
+
+    @PutMapping
+    public ApiResponse<GymResponseDto> editGym(@RequestBody GymRequestDto gymRequestDto){
+
+        GymResponseDto gym=gymService.editGym(gymRequestDto);
+
+        ApiResponse<GymResponseDto> newGym=new ApiResponse<>(true," gym modified sucessfully",gym);
+
+        return newGym;
+
+    }
+
+
+    @DeleteMapping("/{id}")
+    public ApiResponse<GymResponseDto> deleteGym(@PathVariable("id") Long Id){
+
+        gymService.deleteGym(Id);
+
+        ApiResponse<GymResponseDto> newGym=new ApiResponse<>(true," gym deleted sucessfully",null);
+
+        return newGym;
+
+    }
 }

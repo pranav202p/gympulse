@@ -14,4 +14,8 @@ public interface GymService {
     GymResponseDto addGym(GymRequestDto gymRequestDto);
 
     GymResponseDto getGym(Long id);
+
+    GymResponseDto editGym(GymRequestDto gymRequestDto);
+
+    void deleteGym(Long Id);
 }

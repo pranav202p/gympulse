@@ -72,4 +72,33 @@ public class GymServiceImpl implements  GymService{
                 getGym.getPhone(),
                 getGym.getEmail());
     }
+
+    @Override
+    public GymResponseDto editGym(GymRequestDto gymRequestDto) {
+        Gym newGym=new Gym(
+                gymRequestDto.getName(),
+                gymRequestDto.getAddress(),
+                gymRequestDto.getCity(),
+                gymRequestDto.getState(),
+                gymRequestDto.getPostalCode(),
+                gymRequestDto.getPhone(),
+                gymRequestDto.getEmail()
+        );
+        gymRepository.save(newGym);
+
+        return new GymResponseDto(newGym.getName(),
+                newGym.getAddress(),
+                newGym.getCity(),
+                newGym.getState(),
+                newGym.getPostalCode(),
+                newGym.getPhone(),
+                newGym.getEmail());
+    }
+
+    @Override
+    public void deleteGym(Long Id) {
+
+        Gym deleteGym=gymRepository.findById(Id).orElseThrow(()-> new GymNotFoundException("Gym not found"));
+        gymRepository.delete(deleteGym);
+    }
 }
